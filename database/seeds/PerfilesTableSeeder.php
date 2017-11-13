@@ -3,7 +3,8 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-class DatabaseSeeder extends Seeder
+
+class PerfilesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,10 +13,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call([
-          PerfilesTableSeeder::class,
-          EscuelasTableSeeder::class,
-          UsersTableSeeder::class,
+      DB::table('perfil')->insert([
+          'nombre' => 'Administrador',
       ]);
+
+      DB::table('perfil')->insert([
+          'nombre' => 'Miembro',
+      ]);
+
     }
 }

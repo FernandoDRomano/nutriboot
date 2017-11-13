@@ -4,6 +4,7 @@
 
 @section('contenido')
 
+<div class="container col-md-12">
 	<div class="row">
         <div class="form-group">
             <a href="{{ route('escuela.create') }}" class="btn btn-primary" role="button">Nueva Escuela</a><br><br>
@@ -54,6 +55,7 @@
 					</div>
 			</div>
 
+</div>
 
         {!! $escuelas->render() !!}
 

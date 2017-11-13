@@ -16,8 +16,9 @@
 				@else
 		      <li><a href="{{ route('alumno.index') }}"><span class="glyphicon glyphicon-edit"></span> Alumnos</a></li>
 		      <li><a href="{{ route('proveedor.index') }}"><span class="glyphicon glyphicon-shopping-cart"></span> Proveedores</a></li>
-		      <li><a href="{{ route('insumo.index') }}"><span class="glyphicon glyphicon-apple"></span> Insumos</a></li>
+		      <li><a href=""><span class="glyphicon glyphicon-apple"></span> Insumos</a></li>
 		      <li><a href="#"><span class="glyphicon glyphicon-cutlery"></span> Comida</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-list"></span> Plan Nutricional</a></li>
 				@endif
 		  </ul>
 

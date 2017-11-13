@@ -4,19 +4,23 @@
 
 @section('contenido')
 
+<div class="container col-md-12">
+
 	<div class="row">
-        <div class="form-group">
-            <a href="{{ route('categoria.create') }}" class="btn btn-primary" role="button">Nueva Categoria</a><br><br>
-						{{-- Buscador de Categorias --}}
-						{{Form::open(['route'=>'categoria.index', 'method'=>'GET', 'class'=>'navbar-form pull-right' ])}}
-								<div class="input-group">
-									{{Form::text('nombre', null, ['class'=>'form-control', 'placeholder'=>'Buscar Categoria..', 'aria-describedby' =>'search'])}}
-									<span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
-								</div>
-						{{Form::close()}}
-						{{-- Fin del Buscador --}}
+		<div class="col-md-12">
+			</div>
+					<div class="form-group">
+							<a href="{{ route('categoria.create') }}" class="btn btn-primary" role="button">Nueva Categoria</a><br><br>
+							{{-- Buscador de Categorias --}}
+							{{Form::open(['route'=>'categoria.index', 'method'=>'GET', 'class'=>'navbar-form pull-right' ])}}
+									<div class="input-group">
+										{{Form::text('nombre', null, ['class'=>'form-control', 'placeholder'=>'Buscar Categoria..', 'aria-describedby' =>'search'])}}
+										<span class="input-group-addon" id="search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></span>
+									</div>
+							{{Form::close()}}
+							{{-- Fin del Buscador --}}
 				</div>
-	</div>
+		</div>
 
 	<div class="row">
 			<div class="col-md-12">
@@ -49,7 +53,7 @@
 							</div>
 					</div>
 			</div>
-
+</div>
 
         {!! $categorias->render() !!}
 

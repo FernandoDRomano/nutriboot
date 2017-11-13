@@ -6,13 +6,13 @@
 
 <div class="container col-md-12">
 
-  <div class="row">
+<div class="row">
           <div class="col-md-12">
               <div class="panel panel-danger">
                   <div class="panel-heading text-center"><h4><strong>Escuela: </strong> {{$escuela->nombre}}</h4></div>
              </div>
          </div>
- </div>
+</div>
 
 
   <div class="row">
